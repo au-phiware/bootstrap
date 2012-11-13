@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../../docs/assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding: 30px;
+      }
+    </style>
+    <link href="../../docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../../docs/assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../docs/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../docs/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../docs/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../docs/assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+  <!-- Drawer
+    ================================================== -->
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Drawers example</h1>
+        <p>This example is a quick exercise to illustrate how the drawers work.</p>
+        <div>
+          <div class="drawers drawers-large">
+            <div class="dwr">Drawer</div>
+            <div class="dwr-content"><div class="dwr">
+                Drawer's contents are revealed when activated.
+            </div></div>
+            <div class="dwr"><b class="knob"></b></div>
+          </div>
+        </div>
+        <p></p>
+        <div>
+          <a class="btn btn-large btn-primary" href="../components.html#drawers">View drawers docs &raquo;</a>
+        </div>
+      </div>
+
+      <div class="navbar">
+        <div class="navbar-inner">
+          <span class="brand">Drawers Tests</span>
+          <div class="navbar-text pull-left">
+            <div class="drawers">
+              <a class="dwr" href="https://github.com/twitter/bootstrap">
+                <img src="https://github.com/favicon.ico"
+                   style="height: 14px; margin: -1px 2px 1px -4px;" />
+                GIT
+              </a>
+              <div class="dwr-content"><div class="dwr">
+                <small>https://github.com/twitter/bootstrap</small>
+              </div></div>
+              <div class="dwr"><b class="knob"></b></div>
+            </div>
+          </div>
+          <div class="navbar-text pull-right">
+            <div class="drawers">
+              <div class="dwr"><b class="knob"></b></div>
+              <div class="dwr-content"><div class="dwr">
+                <span style="font-size:smaller;">https://github.com/twitter/bootstrap</span>
+              </div></div>
+              <a class="dwr" href="https://github.com/twitter/bootstrap">
+                GIT<img src="https://github.com/favicon.ico"
+                      style="height: 14px; margin: -1px -4px 1px 6px;" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div>
+        <div class="drawers drawers-mega">
+          <span class="dwr">Mega</span>
+          <div class="dwr-content"><div class="dwr">
+            font-size: 43px; padding: 20px 32px;
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+        <div class="drawers drawers-large">
+          <span class="dwr">Large</span>
+          <div class="dwr-content"><div class="dwr">
+            font-size: 20px; padding: 19px 11px;
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+        <div class="drawers">
+          <span class="dwr">Default</span>
+          <div class="dwr-content"><div class="dwr">
+            font-size: 14px; padding: 12px  4px;
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+        <div class="drawers drawers-small">
+          <span class="dwr">Small</span>
+          <div class="dwr-content"><div class="dwr">
+            font-size: 12px; padding:  3px  9px;
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+        <div class="drawers drawers-mini">
+          <span class="dwr">Mini</span>
+          <div class="dwr-content"><div class="dwr">
+            font-size: 10.5px; padding:  2px  6px;
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div>
+        <div class="drawers">
+          <a class="dwr" href="#">Link</a>
+          <div class="dwr-content"><div class="dwr">
+            https://github.com/twitter/bootstrap
+          </div></div>
+          <a class="dwr"><b class="knob"></b></a>
+        </div>
+        <div class="drawers">
+          <button class="dwr">Button</button>
+          <div class="dwr-content"><div class="dwr">
+            https://github.com/twitter/bootstrap
+          </div></div>
+          <button class="dwr"><b class="knob"></b></button>
+        </div>
+        <div class="drawers">
+          <input type="button" class="dwr" value="Input" />
+          <div class="dwr-content"><div class="dwr">
+            https://github.com/twitter/bootstrap
+          </div></div>
+          <b class="dwr"><b class="knob"></b></b>
+        </div>
+        <button class="drawers">
+          <span class="dwr">Button</span>
+          <div class="dwr-content"><div class="dwr">
+            https://github.com/twitter/bootstrap
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </button>
+      </div>
+
+      <p></p>
+
+      <div>
+        <form>
+          <div class="drawers drawers-large">
+            <div class="dwr">Nest</div>
+            <div class="dwr-content"><div class="dwr">
+              <button id="nested" class="btn btn-mini">
+                mini button
+              </button>
+            </div></div>
+            <div class="dwr"><b class="knob"></b></div>
+          </div>
+        </form>
+        <div class="drawers drawers-large">
+          <div class="dwr">Nest</div>
+          <div class="dwr-content"><div class="dwr">
+            <button id="nested" class="btn btn-mini">
+              mini button
+            </button>
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+        <div class="drawers drawers-large active">
+          <div class="dwr">Me</div>
+          <div class="dwr-content"><div class="dwr">
+            <div class="drawers drawers-mini">
+              <div class="dwr">Mini-Me</div>
+              <div class="dwr-content"><div class="dwr">
+                &#8230;you complete me.
+              </div></div>
+              <div class="dwr"><b class="knob"></b></div>
+            </div>
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+        <div class="drawers drawers-large">
+          <div class="dwr">Me</div>
+          <div class="dwr-content"><div class="dwr">
+            <div class="drawers drawers-mini active">
+              <div class="dwr">Mini-Me</div>
+              <div class="dwr-content"><div class="dwr">
+                &#8230;you complete me.
+              </div></div>
+              <div class="dwr"><b class="knob"></b></div>
+            </div>
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div>
+        <div class="drawers">
+          <div class="dwr">Copier</div>
+          <div class="dwr-content"><div class="dwr">
+              <a href="https://github.com/twitter/bootstrap" class="copy-drawer">
+                https://github.com/twitter/bootstrap
+              </a>
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div style="position: relative;">
+        <div class="drawers drawers-vertical drawers-large">
+          <a class="dwr" href="#">Vertical</a>
+          <div class="dwr-content"><div class="dwr">
+              <p>Drawers can be stacked</p>
+              <p>vertically</p>
+              <p>too.</p>
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+
+        <div class="drawers drawers-vertical drawers-large"
+             style="position: absolute; bottom: 0px;"
+        >
+          <div class="dwr"><b class="knob"></b></div>
+          <div class="dwr-content"><div class="dwr">
+              <p>Drawers can be stacked</p>
+              <p>vertically</p>
+              <p>too.</p>
+          </div></div>
+          <a class="dwr" href="#">Vertical</a>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div style="position: relative;">
+        <div class="drawers drawers-vertical">
+          <a class="dwr" href="#">Vertical</a>
+          <div class="dwr-content"><div class="dwr">
+              <p>Drawers can be stacked</p>
+              <p>vertically</p>
+              <p>too.</p>
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+
+        <div class="drawers drawers-vertical"
+             style="position: absolute; bottom: 0px;"
+        >
+          <div class="dwr"><b class="knob"></b></div>
+          <div class="dwr-content"><div class="dwr">
+              <p>Drawers can be stacked</p>
+              <p>vertically</p>
+              <p>too.</p>
+          </div></div>
+          <a class="dwr" href="#">Vertical</a>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div style="position: relative;">
+        <div class="drawers drawers-vertical drawers-small">
+          <a class="dwr" href="#">Vertical</a>
+          <div class="dwr-content"><div class="dwr">
+              <p>Drawers can be stacked</p>
+              <p>vertically</p>
+              <p>too.</p>
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+
+        <div class="drawers drawers-vertical drawers-small"
+             style="position: absolute; bottom: 0px;"
+        >
+          <div class="dwr"><b class="knob"></b></div>
+          <div class="dwr-content"><div class="dwr">
+              <p>Drawers can be stacked</p>
+              <p>vertically</p>
+              <p>too.</p>
+          </div></div>
+          <a class="dwr" href="#">Vertical</a>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div style="position: relative;">
+        <div class="drawers drawers-vertical drawers-mini">
+          <a class="dwr" href="#">Vertical</a>
+          <div class="dwr-content"><div class="dwr">
+              <p>Drawers can be stacked</p>
+              <p>vertically</p>
+              <p>too.</p>
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+
+        <div class="drawers drawers-vertical drawers-mini"
+             style="position: absolute; bottom: 0px;"
+        >
+          <div class="dwr"><b class="knob"></b></div>
+          <div class="dwr-content"><div class="dwr">
+              <p>Drawers can be stacked</p>
+              <p>vertically</p>
+              <p>too.</p>
+          </div></div>
+          <a class="dwr" href="#">Vertical</a>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div>
+        <div class="drawers disabled">
+          <a class="dwr" href="#">Disabled</a>
+          <div class="dwr-content"><div class="dwr">
+            Nothing to see here.
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div>
+        <div class="drawers drawers-primary">
+          <div class="dwr">Primary</div>
+          <div class="dwr-content"><div class="dwr">
+            Drawers use the same colors as buttons.
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+        <div class="drawers drawers-warning">
+          <div class="dwr">Warning</div>
+          <div class="dwr-content"><div class="dwr">
+            Drawers use the same colors as buttons.
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+        <div class="drawers drawers-danger">
+          <div class="dwr">Danger</div>
+          <div class="dwr-content"><div class="dwr">
+            Drawers use the same colors as buttons.
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+        <div class="drawers drawers-success">
+          <div class="dwr">Success</div>
+          <div class="dwr-content"><div class="dwr">
+            Drawers use the same colors as buttons.
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+        <div class="drawers drawers-info">
+          <div class="dwr">Info</div>
+          <div class="dwr-content"><div class="dwr">
+            Drawers use the same colors as buttons.
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+        <div class="drawers drawers-inverse">
+          <div class="dwr">Inverse</div>
+          <div class="dwr-content"><div class="dwr">
+            Drawers use the same colors as buttons.
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div style="position: relative;">
+        <div class="drawers">
+          <div class="dwr">position:</div>
+          <div class="dwr-content"><div class="dwr">
+            static;
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+        <div class="drawers" style="position: absolute; left: 110px; top: 0px;">
+          <div class="dwr">position:</div>
+          <div class="dwr-content"><div class="dwr">
+            absolute;
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+      </div>
+      <p></p>
+
+      <div>
+        <div class="drawers drawers-mega">
+          <div class="dwr">Mega</div>
+          <div class="dwr-content"><div class="dwr">
+            <div class="drawers drawers-large">
+              <div class="dwr">Me</div>
+              <div class="dwr-content"><div class="dwr">
+                <div class="drawers drawers-mini">
+                  <div class="dwr">Mini-Me</div>
+                  <div class="dwr-content"><div class="dwr">
+                    &#8230;you complete me.
+                  </div></div>
+                  <div class="dwr"><b class="knob"></b></div>
+                </div>
+              </div></div>
+              <div class="dwr"><b class="knob"></b></div>
+            </div>
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div>
+        <div class="drawers drawers-mega">
+          <div class="dwr">Mega</div>
+          <div class="dwr-content"><div class="dwr">
+            <div class="drawers drawers-large">
+              <div class="dwr">Me</div>
+              <div class="dwr-content"><div class="dwr">
+                <div class="drawers drawers-mini active drawers-inverse">
+                  <div class="dwr">Mini-Me</div>
+                  <div class="dwr-content"><div class="dwr">
+                    &#8230;you complete me.
+                  </div></div>
+                  <div class="dwr"><b class="knob"></b></div>
+                </div>
+              </div></div>
+              <div class="dwr"><b class="knob"></b></div>
+            </div>
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div>
+        <div class="drawers drawers-mega">
+          <div class="dwr">Mega</div>
+          <div class="dwr-content"><div class="dwr">
+            <div class="drawers drawers-large active drawers-inverse">
+              <div class="dwr">Me</div>
+              <div class="dwr-content"><div class="dwr">
+                <div class="drawers drawers-mini">
+                  <div class="dwr">Mini-Me</div>
+                  <div class="dwr-content"><div class="dwr">
+                    &#8230;you complete me.
+                  </div></div>
+                  <div class="dwr"><b class="knob"></b></div>
+                </div>
+              </div></div>
+              <div class="dwr"><b class="knob"></b></div>
+            </div>
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div>
+        <div class="drawers drawers-mega">
+          <div class="dwr">Mega</div>
+          <div class="dwr-content"><div class="dwr">
+            <div class="drawers drawers-large active drawers-inverse">
+              <div class="dwr">Me</div>
+              <div class="dwr-content"><div class="dwr">
+                <div class="drawers drawers-mini active drawers-inverse">
+                  <div class="dwr">Mini-Me</div>
+                  <div class="dwr-content"><div class="dwr">
+                    &#8230;you complete me.
+                  </div></div>
+                  <div class="dwr"><b class="knob"></b></div>
+                </div>
+              </div></div>
+              <div class="dwr"><b class="knob"></b></div>
+            </div>
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div>
+        <div class="drawers drawers-mega active drawers-inverse">
+          <div class="dwr">Mega</div>
+          <div class="dwr-content"><div class="dwr">
+            <div class="drawers drawers-large">
+              <div class="dwr">Me</div>
+              <div class="dwr-content"><div class="dwr">
+                <div class="drawers drawers-mini">
+                  <div class="dwr">Mini-Me</div>
+                  <div class="dwr-content"><div class="dwr">
+                    &#8230;you complete me.
+                  </div></div>
+                  <div class="dwr"><b class="knob"></b></div>
+                </div>
+              </div></div>
+              <div class="dwr"><b class="knob"></b></div>
+            </div>
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div>
+        <div class="drawers drawers-mega active drawers-inverse">
+          <div class="dwr">Mega</div>
+          <div class="dwr-content"><div class="dwr">
+            <div class="drawers drawers-large">
+              <div class="dwr">Me</div>
+              <div class="dwr-content"><div class="dwr">
+                <div class="drawers drawers-mini active drawers-inverse">
+                  <div class="dwr">Mini-Me</div>
+                  <div class="dwr-content"><div class="dwr">
+                    &#8230;you complete me.
+                  </div></div>
+                  <div class="dwr"><b class="knob"></b></div>
+                </div>
+              </div></div>
+              <div class="dwr"><b class="knob"></b></div>
+            </div>
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div>
+        <div class="drawers drawers-mega active drawers-inverse">
+          <div class="dwr">Mega</div>
+          <div class="dwr-content"><div class="dwr">
+            <div class="drawers drawers-large active drawers-inverse">
+              <div class="dwr">Me</div>
+              <div class="dwr-content"><div class="dwr">
+                <div class="drawers drawers-mini">
+                  <div class="dwr">Mini-Me</div>
+                  <div class="dwr-content"><div class="dwr">
+                    &#8230;you complete me.
+                  </div></div>
+                  <div class="dwr"><b class="knob"></b></div>
+                </div>
+              </div></div>
+              <div class="dwr"><b class="knob"></b></div>
+            </div>
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div>
+        <div class="drawers drawers-mega active drawers-inverse">
+          <div class="dwr">Mega</div>
+          <div class="dwr-content"><div class="dwr">
+            <div class="drawers drawers-large active drawers-inverse">
+              <div class="dwr">Me</div>
+              <div class="dwr-content"><div class="dwr">
+                <div class="drawers drawers-mini active drawers-inverse">
+                  <div class="dwr">Mini-Me</div>
+                  <div class="dwr-content"><div class="dwr">
+                    &#8230;you complete me.
+                  </div></div>
+                  <div class="dwr"><b class="knob"></b></div>
+                </div>
+              </div></div>
+              <div class="dwr"><b class="knob"></b></div>
+            </div>
+          </div></div>
+          <div class="dwr"><b class="knob"></b></div>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../docs/assets/js/jquery.js"></script>
+    <script src="../../docs/assets/js/bootstrap-transition.js"></script>
+    <script src="../../docs/assets/js/bootstrap-alert.js"></script>
+    <script src="../../docs/assets/js/bootstrap-modal.js"></script>
+    <script src="../../docs/assets/js/bootstrap-dropdown.js"></script>
+    <script src="../../docs/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../../docs/assets/js/bootstrap-tab.js"></script>
+    <script src="../../docs/assets/js/bootstrap-tooltip.js"></script>
+    <script src="../../docs/assets/js/bootstrap-popover.js"></script>
+    <script src="../../docs/assets/js/bootstrap-button.js"></script>
+    <script src="../../docs/assets/js/bootstrap-collapse.js"></script>
+    <script src="../../docs/assets/js/bootstrap-carousel.js"></script>
+    <script src="../../docs/assets/js/bootstrap-typeahead.js"></script>
+    <script src="../../docs/assets/js/bootstrap-drawers.js"></script>
+    <script src="https://raw.github.com/wrapp/jquery-select/master/jquery-select.js"></script>
+
+  </body>
+</html>

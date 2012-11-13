@@ -53,6 +53,9 @@
   // Active state
   &.active,
   &:active {
+    .active();
+  }
+  .active() {
     background-color: darken(@white, 10%);
     background-color: darken(@white, 15%) e("\9");
     background-image: none;
@@ -63,6 +66,9 @@
   // Disabled state
   &.disabled,
   &[disabled] {
+    .disabled();
+  }
+  .disabled() {
     cursor: default;
     background-color: darken(@white, 10%);
     background-image: none;

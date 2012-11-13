@@ -1,0 +1,322 @@
+//
+// Drawers
+// --------------------------------------------------
+// Chest of drawers look like button groups that
+// slide open when active.
+// A drawer doesn't make sense outside of a chest.
+
+.drawers {
+  .btn-group;
+  display: inline-block;
+  .ie7-inline-block();
+
+  & + .drawers {
+    margin-left: 5px;
+  }
+
+  .drawer() {
+    .btn;
+    .btn-group > .btn;
+  }
+
+  .drawers-size(
+      @padding-oblique: 12px,
+      @padding-orthogo: 4px,
+      @font-size: 14px,
+      @border-radius: 4px) {
+    & > .dwr,
+    & > .dwr-content > .dwr {
+      font-size: @font-size;
+      .border-radius(0px);
+
+      padding: @padding-orthogo ((@padding-oblique) / 2);
+      & > * {
+        margin: (-(@padding-orthogo) + 2) 0px;
+      }
+    }
+
+    &.drawers-vertical > .dwr,
+    &.drawers-vertical > .dwr-content > .dwr {
+      padding: ((@padding-orthogo) / 2) @padding-oblique;
+      & > * {
+        margin: 0px;
+      }
+    }
+
+    & > .dwr {
+      &:first-child {
+        .knob {
+          margin-left: (-@padding-oblique / 2);
+        }
+        padding-left: @padding-oblique;
+        .border-left-radius(@border-radius);
+      }
+      &:last-child {
+        .knob {
+          margin-right: (-@padding-oblique / 2);
+        }
+        padding-right: @padding-oblique;
+        .border-right-radius(@border-radius);
+      }
+    }
+
+    &.drawers-vertical > .dwr {
+      &:first-child {
+        .knob {
+          margin-left: 0px;
+          margin-top: (-@padding-orthogo / 2);
+        }
+        padding-top: @padding-orthogo;
+        .border-top-right-radius(@border-radius);
+        .border-bottom-left-radius(0px);
+      }
+      &:last-child {
+        .knob {
+          margin-right: 0px;
+          margin-bottom: (-@padding-orthogo / 2);
+        }
+        padding-bottom: @padding-orthogo;
+        .border-bottom-left-radius(@border-radius);
+        .border-top-right-radius(0px);
+      }
+    }
+  }
+
+  & > .dwr {
+    .drawer;
+
+    .knob {
+      .icon;
+      margin-top: -8px;
+      margin-bottom: -4px;
+      vertical-align: middle;
+      -webkit-transition: -webkit-transform 0.4s, margin 0.4s;
+         -moz-transition:    -moz-transform 0.4s, margin 0.4s;
+           -o-transition:      -o-transform 0.4s, margin 0.4s;
+              transition:         transform 0.4s, margin 0.4s;
+    }
+
+    &:first-child {
+      .knob {
+        .icon-chevron-left;
+      }
+      margin-left: 0;
+    }
+
+    &:last-child .knob {
+      .icon-chevron-right;
+    }
+  }
+
+  &.drawers-vertical > .dwr {
+    .knob {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    &:first-child .knob,
+    &:last-child .knob {
+      .rotate(90deg);
+      *filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+    }
+  }
+
+  & > .dwr-content, & > .dwr {
+    vertical-align: middle;
+  }
+
+  & > .dwr-content {
+    display: inline-block;
+    .ie7-inline-block();
+
+    width: 0px;
+    padding: 0px;
+    margin: 0px;
+
+    overflow: hidden;
+    white-space: nowrap;
+
+    border-width: 0px;
+    
+    .transition(~'width 0.4s');
+
+    & > .dwr {
+      .drawer;
+      .btn.active;
+      display: inline-block;
+    }
+  }
+
+  .drawers-size();
+
+  &.active {
+    z-index: 2;
+
+    & > .dwr-content {
+      width: auto;
+    }
+
+    & > .dwr {
+      &:first-child .knob,
+      &:last-child .knob {
+        margin-top: -7px;
+        margin-bottom: -5px;
+        .transition-delay(0.3s);
+        .rotate(-180deg);
+        *filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+      }
+    }
+
+    &.drawers-vertical > .dwr {
+      &:first-child .knob,
+      &:last-child .knob {
+        margin: 0px;
+        .rotate(-90deg);
+        *filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+      }
+    }
+  }
+
+  & > * + * {
+    margin-left: -1px;
+  }
+  &.drawers-vertical > * + * {
+    margin-left: 0px;
+    margin-top: -1px;
+  }
+
+  &:hover > .dwr {
+    .btn.hover;
+  }
+
+  &.disabled,
+  &[disabled] {
+    & > .dwr {
+      .btn.disabled;
+    }
+  }
+
+  &.drawers-vertical {
+    & > .dwr-content,
+    & > .dwr-content > .dwr,
+    & > .dwr {
+      display: block;
+    }
+
+    & > .dwr-content {
+      width: auto;
+      height: 0px;
+      .transition(~'height 0.4s');
+    }
+  }
+
+  &.mini,
+  &.drawers-mini {
+    & > .dwr,
+    & > .dwr-content > .dwr {
+      .btn-mini;
+      line-height: normal;
+    }
+    .drawers-size(
+      6px, 2px,
+      10.5px, 3px
+    );
+  }
+
+  &.small,
+  &.drawers-small {
+    & > .dwr,
+    & > .dwr-content > .dwr {
+      .btn-small;
+    }
+    .drawers-size(
+      9px, 3px,
+      12px, 3px
+    );
+  }
+
+  &.large,
+  &.drawers-large {
+    & > .dwr,
+    & > .dwr-content > .dwr {
+      .btn-large;
+    }
+    .drawers-size(
+      19px, 11px,
+      20px, 6px
+    );
+  }
+
+  &.mega,
+  &.drawers-mega {
+    & > .dwr,
+    & > .dwr-content > .dwr {
+      .btn-large;
+    }
+    .drawers-size(
+      32px, 20px,
+      43px, 9px
+    );
+  }
+
+  .background(@startColor, @endColor, @textColor: #fff, @textShadow: 0 -1px 0 rgba(0,0,0,.25)) {
+    & > .dwr,
+    & > .dwr-content > .dwr {
+      // gradientBar will set the background to a pleasing blend of these, to support IE<=9
+      .gradientBar(@startColor, @endColor, @textColor, @textShadow);
+      *background-color: @endColor; /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+      .reset-filter();
+    }
+    & > .dwr-content > .dwr {
+      background-position: 0 -15px;
+    }
+
+    // in these cases the gradient won't cover the background, so we override
+    & > .dwr-content,
+    &:hover, &:active, &.active, &.disabled, &[disabled] {
+      & > .dwr {
+        color: @textColor;
+        background-color: @endColor;
+        *background-color: darken(@endColor, 5%);
+      }
+    }
+
+    // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
+    &:active,
+    &.active {
+      & > .dwr,
+      & > .dwr-content > .dwr {
+        background-color: darken(@endColor, 10%) e("\9");
+      }
+    }
+  }
+
+  &.drawers-primary,
+  &.drawers-warning,
+  &.drawers-danger,
+  &.drawers-success,
+  &.drawers-info,
+  &.drawers-inverse {
+    & > .dwr .knob {
+      .icon-white;
+    }
+  }
+  &.drawers-primary {
+    .background(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
+  }
+  &.drawers-warning {
+    .background(@btnWarningBackground, @btnWarningBackgroundHighlight);
+  }
+  &.drawers-danger {
+    .background(@btnDangerBackground, @btnDangerBackgroundHighlight);
+  }
+  &.drawers-success {
+    .background(@btnSuccessBackground, @btnSuccessBackgroundHighlight);
+  }
+  &.drawers-info {
+    .background(@btnInfoBackground, @btnInfoBackgroundHighlight);
+  }
+  &.drawers-inverse {
+    .background(@btnInverseBackground, @btnInverseBackgroundHighlight);
+  }
+}
